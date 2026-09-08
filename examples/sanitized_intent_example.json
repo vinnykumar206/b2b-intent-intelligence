@@ -1,0 +1,84 @@
+{
+  "example_type": "sanitized_b2b_intent_signal",
+  "notice": "Fictional example created to demonstrate the intent-intelligence workflow. No real company, prospect, or client information is included.",
+  "organization": {
+    "name": "Example Enterprise",
+    "location": "India"
+  },
+  "signals": [
+    {
+      "signal_id": "SIG-DEMO-001",
+      "signal_type": "Hiring",
+      "timestamp": "2026-09-05T09:30:00Z",
+      "summary": "Example Enterprise announces multiple leadership openings during a period of organizational expansion."
+    },
+    {
+      "signal_id": "SIG-DEMO-002",
+      "signal_type": "Business Challenge",
+      "timestamp": "2026-09-06T11:15:00Z",
+      "summary": "A senior business representative publicly discusses capability challenges associated with organizational growth."
+    },
+    {
+      "signal_id": "SIG-DEMO-003",
+      "signal_type": "Business Development",
+      "timestamp": "2026-09-07T08:45:00Z",
+      "summary": "The organization announces an expansion initiative that may require additional organizational capabilities."
+    }
+  ],
+  "processing": {
+    "recency_filter": {
+      "status": "PASS",
+      "reason": "The example signals fall within the intended recent-signal monitoring window."
+    },
+    "deduplication": {
+      "status": "PASS",
+      "duplicates_detected": false
+    }
+  },
+  "intent_analysis": {
+    "primary_intent": "Business Challenge",
+    "intent_level": "Potential",
+    "reason": "The available signals indicate organizational change and a publicly discussed capability challenge. These signals may justify further commercial investigation but do not confirm an active buying process."
+  },
+  "intent_scoring": {
+    "base_intent_score": 70,
+    "supporting_signal_factor": 10,
+    "final_priority_score": 80,
+    "priority_category": "HOT",
+    "note": "Illustrative scoring only. The score represents prioritization for human investigation and is not a prediction of purchase probability or revenue."
+  },
+  "prospect_enrichment": {
+    "organization_identified": true,
+    "potential_persona": "Business Leader",
+    "persona_confidence": "Medium",
+    "contactability": "Potentially Available",
+    "note": "Contact information is intentionally fictional and excluded from this example."
+  },
+  "opportunity_assessment": {
+    "status": "Requires Human Investigation",
+    "why_it_matters": "Multiple recent signals suggest organizational change combined with a publicly discussed capability challenge.",
+    "commercial_interpretation": "Potential commercial relevance",
+    "certainty": "Not confirmed"
+  },
+  "recommended_action": {
+    "action": "Human Review",
+    "steps": [
+      "Validate the original signals",
+      "Review the organization's current business context",
+      "Confirm stakeholder relevance",
+      "Determine whether the underlying challenge is still active",
+      "Decide whether further research or outreach is justified"
+    ]
+  },
+  "human_decision": {
+    "status": "Pending",
+    "possible_outcomes": [
+      "Pursue",
+      "Research Further",
+      "Defer",
+      "Reject",
+      "Route to Another Team"
+    ]
+  },
+  "core_principle": "A detected signal is evidence for investigation, not confirmation of buying intent."
+}
