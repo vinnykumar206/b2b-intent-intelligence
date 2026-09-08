@@ -28,6 +28,7 @@
   "processing": {
     "recency_filter": {
       "status": "PASS",
+      "window_hours": 48,
       "reason": "The example signals fall within the intended recent-signal monitoring window."
     },
     "deduplication": {
@@ -38,30 +39,39 @@
   "intent_analysis": {
     "primary_intent": "Business Challenge",
     "intent_level": "Potential",
-    "reason": "The available signals indicate organizational change and a publicly discussed capability challenge. These signals may justify further commercial investigation but do not confirm an active buying process."
-  },
-  "intent_scoring": {
     "base_intent_score": 70,
-    "supporting_signal_factor": 10,
-    "final_priority_score": 80,
-    "priority_category": "HOT",
-    "note": "Illustrative scoring only. The score represents prioritization for human investigation and is not a prediction of purchase probability or revenue."
+    "keyword_bonus": 10,
+    "persona": "Business Leader",
+    "persona_bonus": 5,
+    "final_intent_score": 85,
+    "priority": "HIGH",
+    "reason": "The signals indicate organizational change and a publicly discussed capability challenge. These signals may justify further commercial investigation but do not confirm an active buying process."
+  },
+  "scoring_breakdown": {
+    "base_score": 70,
+    "keyword_evidence": 10,
+    "persona_evidence": 5,
+    "calculated_score": 85,
+    "calculation": "70 + 10 + 5 = 85",
+    "note": "The score is used for prioritization and is not a prediction of purchase probability, revenue, or deal outcome."
   },
   "prospect_enrichment": {
     "organization_identified": true,
     "potential_persona": "Business Leader",
     "persona_confidence": "Medium",
     "contactability": "Potentially Available",
+    "business_fit": "Requires Validation",
+    "enrichment_status": "Preliminary",
     "note": "Contact information is intentionally fictional and excluded from this example."
   },
   "opportunity_assessment": {
-    "status": "Requires Human Investigation",
+    "status": "Requires Human Validation",
     "why_it_matters": "Multiple recent signals suggest organizational change combined with a publicly discussed capability challenge.",
     "commercial_interpretation": "Potential commercial relevance",
     "certainty": "Not confirmed"
   },
   "recommended_action": {
-    "action": "Human Review",
+    "action": "Research the underlying challenge before considering outreach.",
     "steps": [
       "Validate the original signals",
       "Review the organization's current business context",
