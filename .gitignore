@@ -1,0 +1,49 @@
+# Environment & secrets
+.env
+.env.*
+!.env.example
+
+# Authentication / browser sessions
+*session*.json
+*cookie*.json
+cookies/
+sessions/
+browser-data/
+
+# Production / prospect data
+*.xlsx
+*.xls
+*.csv
+*.sqlite
+*.db
+
+# Logs and generated output
+*.log
+logs/
+output/
+data/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# IDE / editor files
+.vscode/
+.idea/
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+tmp/
+temp/
+scratch/
